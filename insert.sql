@@ -1,0 +1,1 @@
+INSERT INTO json_test (data) VALUES ('{"level1": {"level2": {"level3": {"level4": {"level5": {"level6": {"level7": {"level8": {"level9": {"level10": {"level11": {"level12": {"level13": {"level14": {"level15": "Este é o valor no nível 15"}}}}}}}}}}}}}}}'::jsonb);
