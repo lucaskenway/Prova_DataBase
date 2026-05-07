@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680">
+  <style>text{font-family:Arial, sans-serif;font-size:14px;fill:#222;} .title{font-weight:bold;font-size:16px;} .box{fill:#f8f9fb;stroke:#334155;stroke-width:2;} .rel{stroke:#334155;stroke-width:2;marker-end:url(#arrow);} </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect class="box" x="50" y="40" width="260" height="120" rx="12"/>
+  <text class="title" x="70" y="65">academico.aluno</text>
+  <text x="70" y="95">id_aluno PK</text>
+  <text x="70" y="115">nome</text>
+  <text x="70" y="135">email</text>
+  <text x="70" y="155">cidade</text>
+  <text x="70" y="175">ativo</text>
+  <rect class="box" x="330" y="40" width="260" height="120" rx="12"/>
+  <text class="title" x="350" y="65">academico.professor</text>
+  <text x="350" y="95">id_professor PK</text>
+  <text x="350" y="115">nome</text>
+  <text x="350" y="135">ativo</text>
+  <rect class="box" x="610" y="40" width="260" height="100" rx="12"/>
+  <text class="title" x="630" y="65">academico.disciplina</text>
+  <text x="630" y="95">id_disciplina PK</text>
+  <text x="630" y="115">nome</text>
+  <rect class="box" x="330" y="220" width="260" height="120" rx="12"/>
+  <text class="title" x="350" y="245">academico.turma</text>
+  <text x="350" y="275">id_turma PK</text>
+  <text x="350" y="295">id_disciplina FK</text>
+  <text x="350" y="315">id_professor FK</text>
+  <text x="350" y="335">ciclo</text>
+  <text x="350" y="355">ativo</text>
+  <rect class="box" x="50" y="420" width="260" height="120" rx="12"/>
+  <text class="title" x="70" y="445">academico.matricula</text>
+  <text x="70" y="475">id_matricula PK</text>
+  <text x="70" y="495">id_aluno FK</text>
+  <text x="70" y="515">id_turma FK</text>
+  <text x="70" y="535">ativo</text>
+  <rect class="box" x="330" y="420" width="260" height="100" rx="12"/>
+  <text class="title" x="350" y="445">academico.nota</text>
+  <text x="350" y="475">id_nota PK</text>
+  <text x="350" y="495">id_matricula FK</text>
+  <text x="350" y="515">valor</text>
+  <text x="350" y="535">ativo</text>
+  <line class="rel" x1="180" y1="180" x2="380" y2="220"/>
+  <text x="210" y="200">1:N</text>
+  <line class="rel" x1="450" y1="160" x2="450" y2="220"/>
+  <text x="460" y="190">1:N</text>
+  <line class="rel" x1="450" y1="340" x2="180" y2="420"/>
+  <text x="300" y="380">1:N</text>
+  <line class="rel" x1="450" y1="340" x2="380" y2="420"/>
+  <text x="430" y="380">1:N</text>
+  <line class="rel" x1="450" y1="340" x2="380" y2="500"/>
+</svg>
